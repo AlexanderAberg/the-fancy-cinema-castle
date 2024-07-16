@@ -1,131 +1,241 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# The Fancy Cinema Castle
+- The Fancy Cinema Castle is a page where you can book auditoriums for viewing movies or play games.
+- It is an esclusive experience and compared to a normal cinema you book the whole auditorium and not just a couple of seats.
+- You will be able to see what is on offer in a user friendly site.
+- Link to the live version of the project can be found here: - <a href="http"> and to the GitHub page here: <a href="https://github.com/AlexanderAberg/the-fancy-cinema-castle"> 
 
-Welcome USER_NAME,
+<img src="assets/images/amiresponsive.png" alt="Responsive Screens">
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
+# UX
+### Visitor Goals
+The expected visitor is:
+- Visitors that wants to understand more about sexual health and sexual transmitted diseases and infections.
+- Visitors that believe that they or someone else has a sexual transmitted disease or infection.
+- Visitors that wants to get a suggestion about the next step for their sexual transmitted diseases and infections.
 
-## Gitpod Reminders
+Visitors goals are:
+- Read facts about the sexual transmitted diseases.
+- Go through the quiz to strenghtening or weakening the belief they or others are affected by a sexual transmitted disease or infection.
+- Get suggestions what to do including tests and contacting health professionals.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+How STIgma Free fills the needs:
+- You can get information about different infections.
+- You can do a quiz to find out if you have an increased risk of being infected.
+- The page is easy to use to get the information you need and you get recommendations to get tests or contact health professionals.
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
+### Business Goals
+The Business Goals are:
+- Spread awareness of sexually transmitted infections judgement free and make people test and contact health clinics.
+- Get people to be able to contact our partners in the health care industry.
+- If enough people will be aware the bigger chance that we will eradicate the infections and diseases.
 
-Another blue button should appear to click: _Open Browser_.
+### User Stories
+1. As a person with an active sex life I would want to protect my sexual health.
+0. I expect to be able to find out if I am in a risk of having an STI or STD.
+0. I will be able to read up on STI's and STD's to prevent it from spreading to me.
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
 
-A blue button should appear to click: _Make Public_,
+### Existing Features
 
-Another blue button should appear to click: _Open Browser_.
+- __Header__
+  - Header has a menu with a nav bar or text on bigger screens and the website name in a logo.
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+<img src="assets/images/header.png" alt="Header">
 
-To log into the Heroku toolbelt CLI:
+- __Navigation Bar__
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+  - The navigation bar can be found on all pages and is fully responsive, it will turn between a bar or buttons depending on the size of the screen.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+<img src="assets/images/navbar.png" alt="Nav bar">
 
-### Connecting your Mongo database
+- __The landing page images__
 
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
+  - The landing page or "Home" has a questionnare and some short information about the STI's with a button on each to read more, which will take them to the correct section in the info page. 
+  - It also have small pictures for each disease and infection and when you click them you get a bigger version.
+  - At top of page you can read what to think about under a picture and underneat you can take the questionnaire which will take you to the questionnaire page.
+  - The page has some short information about all diseases and infetions, it also have pictures and if you press condom buttons you can read more on the related page.
 
-------
+<img src="assets/images/landingpage.png" alt="Landing Page">
 
-## Release History
+- __STDs__
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+  - The button will make you able to reach information about all 9 STI and STD.
 
-**June 18, 2024,** Add Mongo back into template
+- __Disease and Infection pages__
 
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
+  - The 9 pages will let you read about the infections and diseases 
 
-**May 28 2024:** Fix Mongo and Links installs
+<img src="assets/images/std-sti.png" alt="Disease and Infection pages">
 
-**April 26 2024:** Update node version to 16
+- __Questionnaire__
 
-**September 20 2023:** Update Python version to 3.9.17.
+  - This page has a questionnaire quiz that you can take to get recommendations to contact our partner to get tests or book an apointment, if you are considered high risk we will recommend the health clinic.
+  - The buttons will be coloured according to if it increases or decreases your risk.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+  <img src="assets/images/questionnaire.png" alt="Questionnaire">
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+- __Team__
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+  - The Team page has information about the team, with pictures, short info and links to LinkedIn and GitHub.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+<img src="assets/images/team.png" alt="Team">
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+- __The Footer__ 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+  - The footer has contact information and a trademark.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+<img src="assets/images/footer.png" alt="Footer">
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Thoughts behind our choices
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+- We wanted to make an inclusive and stigma free site for sexually transmittes infections.
+- We used rainbow related colours to show that we are inclusive and that you can be yourself.
+- Our direction to LGTBQI+ is because the community is more stigmatized and therefore less likely
+to find out about infections in time.
+- We want people to be able to get recommendations so they have a next step to take.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### Agile
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+- We have worked agile to be able to adjust and fix issues that need to be prioritized.
+- High level of open communication mainly through slack.
+- The scope has changed during the course of the project according to the agile philosophy of it being most important with a good enough functioning product.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
-------
+### Kanban
 
-## FAQ about the uptime script
+- Worked in a Kanban board on GitHub to see where we are with our features in the project.
+- https://github.com/users/AlexanderAberg/projects/4/views/1
 
-**Why have you added this script?**
+<img src="assets/images/kanban.png" alt='Kanban Board'>
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
 
-**How will this affect me?**
+### Google Sheets
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+- Data is taken from https://docs.google.com/spreadsheets/d/1WbLvIHAxbtCMGZuvHieJsoPTi4rfxFQwe68zECg8iXQ/edit?gid=0#gid=0
+- In the future we want to make the sheet connected to make updates easier
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+<img src="assets/images/google_sheets.png" alt='Google Sheets'>
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
 
-**So….?**
+### Features Left to Implement
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+- In the future we want to have partners that sell tests and health clinics for the visitors to visit, instead of our current temporary pages.
 
-**Can I opt out?**
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### Testing 
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+- We have tested on pc, mac and phones, also checked the responsivness on different screen sized without any issues.
+- We have clicked to make all links and buttons to work.
 
-**Anything more?**
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+### Validator Testing 
 
----
+- HTML
+  -  [W3C validator](https://validator.w3.org/nu/?).
+- CSS
+  -  2 issues and 1 warning [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?) 
+- JS
+  - No errors was returned for JS, but 41 warnings, in the same style about ES6 [(Jigsaw) validator](https://jshint.com/).
 
-Happy coding!
+<img src="assets/images/validator-html.png" alt='Validator html'>
+<img src="assets/images/validator-css.png" alt='Validator css'>
+<img src="assets/images/validator-js.png" alt='Validator js'>
+
+
+### Unfixed and fixed Bugs
+
+- Solved all known bugs.
+
+
+### Quality Score through Google Devtools Lighthouse
+
+- Lighthouse testing on Chrome Incognito to prevent cookies and background cache to slow down.
+
+<img src="assets/images/lighthouse-home-phone.png" alt="Lighthouse Home Phone">
+<img src="assets/images/lighthouse-home-desktop.png" alt="Lighthouse Home Desktop">
+<img src="assets/images/lighthouse-std-phone.png" alt="Lighthouse STD Phone">
+<img src="assets/images/lighthouse-std-desktop.png" alt="Lighthouse STD Desktop">
+<img src="assets/images/lighthouse-questionnaire-phone.png" alt="Lighthouse Questionnaire Phone">
+<img src="assets/images/lighthouse-questionnaire-desktop.png" alt="Lighthouse Questionnaire Desktop">
+<img src="assets/images/lighthouse-team-phone.png" alt="Lighthouse Team Phone">
+<img src="assets/images/lighthouse-team-desktop.png" alt="Lighthouse Team Desktop">
+
+### Deployment
+
+- The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the GitHub repository, navigate to the Settings tab 
+  - From the source section drop-down menu, select the Master Branch
+  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+  - You can either copy the link for Code or Open in a new repository or see the live version under Deployment to the right under github-pages.
+  - In GitHub you can open every seperate file including html. css. images and even favicons and see the folder structure.
+  - It is possible to check the commit history in github-pages under Deployment to the right
+
+  - Link to the live version of the project can be found here: - <a href="https://johanplar.github.io/Stigma_Free/"> and to the GitHub page here: <a href="https://github.com/JohanPlAr/Stigma_Free"> 
+
+
+### Credits 
+
+Favicon from  <a href="https://favicon.io/emoji-favicons/rainbow-flag/">Icon by John Sorrentino and open source project Twemoji.</a>
+
+- STI & STD information from 1177, RFSL, NHS and internetmedicin.se
+- Colour image from Coolors.co
+- Images from pexels.com and pixelsquid.com
+
+
+### Content 
+
+- STI & STD information from 1177, RFSL, NHS and internetmedicin.se
+
+
+### Media
+
+- The photos used on the home is from pexels.com and pixelsquid.com
+
+
+### Wireframe
+
+- Used Balsamiq for Wireframe and pen + paper
+
+<img src="assets/images/manual-wireframe.jpg" alt="Wireframe on Paper">
+<img src="assets/images/wireframe-home.png" alt="Wireframe for Home">
+<img src="assets/images/wireframe-info.png" alt="Wireframe for Info">
+<img src="assets/images/wireframe-questionnaire.png" alt="Wireframe for Questionnaire">
+<img src="assets/images/wireframe-team.png" alt="Wireframe for Team">
+
+
+### Flowchart
+
+- Flowchart made with pen and paper
+
+<img src="assets/images/manual-flowchart.jpg" alt="Flowchart on Paper">
+
+
+### Technologies Used
+
+- HTML - For how the website with the pages is built and planned 
+- CSS - For all the styling
+- JS - For the Questionnaire and to change between std's
+- Images  -  pexels and PixelSquid
+- Fonts - From Google Fonts
+- Icons - From Fontawesome 
+- Wireframe - From Balsamiq + Pen & Paper
+- Flowchart - Pen & Paper
+- Favicons - Icon from Favicon.io
+- Mockup - Generated at amiresponsive 
+- Rainbow colours inspired by LGTBQI+ community.
+- Google Devtools to check responsiveness and to check Lighthouse for Accessibility
+- GitHub for storing the project and deploying it
+- Gitpod and Codespaces for project development
+- Slack for communication with the team
+- Google Sheets for information
+
+
+### Colours
+
+- Did choose colours that is colourful according to rainbows with a white base for readabillity, you can find the colours on the borders, logos and icons.
+
+<img src="assets/images/colours.png" alt="Rainbow Colours + White">
