@@ -15,6 +15,15 @@ class Book(models.Model):
     options = models.BooleanField(choices=OPTIONS, blank=True, null=True)
     wishes = models.TextField(blank=True, verbose_name='Wishes & Information', max_length=500)
 
+    booker = models.ForeignKey(
+        User,
+        on_delete=models.CASCADE,
+        related_name="bookings"
+    ) 
+
+    def __str__(self):
+        return self.name | self.date
+
 
 class Meta:
     ordering = ['-date']
