@@ -1,7 +1,8 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.views import Home
 
 # Create your views here.
 
-def home(request):
-    return HttpResponse('Welcome to the Castle, The Fancy Cinema Castle!')
+class Home(generic.ListView):
+    queryset = Book.objects.all()
+    template_name = 'home/index.html'
