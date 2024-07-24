@@ -10,10 +10,10 @@
 
 <body>
     <h1>Booking Manager</h1>
-    {% for book in object_list %}
-    <h2>{{book.title}}</h2>
-    <p>{{book.excerpt}}</p>
-    <p>User: {{book.user}}</p>
+    {% for Book in bookings %}
+    <h2>{{bookings.title}}</h2>
+    <p>{{bookings.excerpt}}</p>
+    <p>User: {{bookings.user}}</p>
     {% endfor %}
 </body>
 

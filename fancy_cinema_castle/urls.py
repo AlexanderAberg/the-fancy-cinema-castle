@@ -22,6 +22,6 @@ from about.views import about
 urlpatterns = [
     path('home/', home, name='home'),
     path('about/', about, name='about'),
-    path('', include('bookings.urls'), name='bookings-urls'),
+    path('bookings/', include('bookings.urls'), name='bookings-urls'),
     path('admin/', admin.site.urls),
 ]
