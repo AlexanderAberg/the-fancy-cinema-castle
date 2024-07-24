@@ -1,8 +1,14 @@
 from django.shortcuts import render
-from django.views import Home
 
 # Create your views here.
+def home(request):
+    """
+    Renders the Home page
+    """
+    
 
-class Home(generic.ListView):
-    queryset = Book.objects.all()
-    template_name = 'home/index.html'
+    return render(
+        request,
+        "home/index.html",
+        {"home": home},
+    )

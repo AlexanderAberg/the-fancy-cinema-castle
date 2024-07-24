@@ -1,8 +1,7 @@
 from django.shortcuts import render
-from django.views import About
 
 # Create your views here.
-def About(request):
+def about(request):
     """
     Renders the About page
     """
