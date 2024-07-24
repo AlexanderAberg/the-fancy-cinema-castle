@@ -18,7 +18,7 @@ class Book(models.Model):
     booker = models.ForeignKey(
         User,
         on_delete=models.CASCADE,
-        related_name="bookings"
+        related_name="bookings", null = True
     ) 
 
     def __str__(self):

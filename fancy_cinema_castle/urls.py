@@ -20,8 +20,9 @@ from home.views import home
 from about.views import about
 
 urlpatterns = [
-    path('home/', home, name='home'),
     path('about/', about, name='about'),
-    path('bookings/', include('bookings.urls'), name='bookings-urls'),
     path('admin/', admin.site.urls),
+    path('bookings/', include('bookings.urls'), name='bookings-urls'),
+    path('summernote/', include('django_summernote.urls')),
+    path('home/', home, name='home'),
 ]
