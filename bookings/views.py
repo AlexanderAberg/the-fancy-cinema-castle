@@ -11,6 +11,12 @@ class Bookings(generic.ListView):
 
 
 def bookings(request):
+    if request.method == "POST":
+        book_form = BookForm(data=request.POST)
+        if book_form.is_valid():
+            book_form.save()
+            messages.add_message(request, messages.SUCCESS, "Thank you for booking an auditorium, we will see you soon.")
+
     bookings = Bookings.objects.all().order_by('-updated_on').first()
     book_form = BookForm()
 
