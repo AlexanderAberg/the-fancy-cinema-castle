@@ -25,29 +25,84 @@
                             </a>
                             <h2>{{ bookings.title }}</h2>
                             {{ bookings.content | safe }}
-                            <p class="card-text text-muted h6">
-                            </p>
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-md-8 card mb-4 mt-3 ">
+                        <h3>Booking Manager:</h3>
+                        <div class="card-body">
+                            <!-- We want a for loop inside the empty control tags to iterate through each comment in comments -->
+                            {% for booking in book %}
+                            <div
+                                class="p-2 book{% if not book.approved and book.author == user %} faded{% elif not book.approved %} d-none{% endif %}">
+                                <p class="font-weight-bold">
+                                    {{ book.author }}
+                                    <span class="font-weight-normal">
+                                        {{ book.created_on }}
+                                    </span> wrote:
+                                </p>
+                                <div id="book{{ book.id }}">
+                                    {{ book.body | linebreaks }}
+                                </div>
+                                {% if not book.approved and book.author == user %}
+                                <p class="approval">This book is awaiting approval</p>
+                                {% endif %}
+                                {% if user.is_authenticated and book.author == user %}
+                                <button class="btn btn-delete" data-book_id="{{ book.id }}">Delete</button>
+                                <button class="btn btn-edit" data-book_id="{{ book.id }}">Edit</button>
+                                {% endif %}
+                            </div>
+                            <!-- Our for loop ends here -->
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="col-md-4 card mb-4 mt-3 ">
+                        <div class="card-body">
+                            {% if user.is_authenticated %}
+                            <h3>Book an auditorium:</h3>
+                            <p>Booking as: {{ user.username }}</p>
+                            <form id="bookForm" method="post" style="margin-top: 1.3em;">
+                                {{ book_form | crispy }}
+                                {% csrf_token %}
+                                <button id="submitButton" type="submit" class="btn btn-signup btn-lg">Submit</button>
+                            </form>
+                            {% else %}
+                            <p>Log in to do a booking</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Delete confirmation modal -->
+            <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="deleteModalLabel">Delete booking?</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Are you sure you want to delete your booking? This action cannot be undone.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <a id="deleteConfirm" href="#" class="btn btn-danger">Delete</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            </div>
-            <div class="row">
-                <!-- Booking Manager form -->
-                <form method="post">
-                    {{ book_form | crispy }}
-                    {% csrf_token %}
-                    <button class="btn btn-secondary" type="submit">Submit</button>
-                </form>
-            </div>
+            <nav aria-label="Page navigation">
+
+            </nav>
+
         </div>
-    </div>
 
-    <nav aria-label="Page navigation">
+        <!-- bookingmanager.html content ends here -->
+        {% endblock %}
 
-    </nav>
-
-</div>
-
-<!-- bookingmanager.html content ends here -->
-{% endblock %}
+        {% block extras %}
+        <script src="{% static 'js/bookings.js' %}"></script>
+        {% endblock %}
