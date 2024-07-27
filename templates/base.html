@@ -35,8 +35,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'home' %}"><span class="brand">c<span class="red-o">o</span>de<span
-                        class="thin">|star</span></span></a>
+            <a class="navbar-brand" href="{% url 'home' %}"><span class="brand">tFCC</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -72,7 +71,7 @@
                     {% endif %}
                 </ul>
                 <span class="navbar-text text-muted">
-                    adventures of a software developer
+                    The Fancy Cinema Castle
                 </span>
             </div>
         </div>
@@ -84,6 +83,9 @@
         {% else %}
         <p class='text-end m-3'>You are not logged in</p>
         {% endif %}<main class="flex-shrink-0 main-bg">
+            <div class="text-primary">
+                <h1>Welcome to The Fancy Cinema Castle</h1>
+            </div>
 
             {% block content %}
             <!-- Content Goes here -->
