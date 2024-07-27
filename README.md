@@ -193,7 +193,7 @@ Favicon from  <a href="https://favicon.io/emoji-favicons/rainbow-flag/">Icon by 
 
 ### Media
 
-- The photos used on the home is from pexels.com and pixelsquid.com
+- Used Freepik AI to create the cinema castle image.
 
 
 ### Wireframe

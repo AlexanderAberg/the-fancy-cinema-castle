@@ -27,15 +27,22 @@
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <!-- Custom CSS -->
     <link rel='stylesheet' href='{% static "css/style.css" %}'>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="static/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/favicons/favicon-16x16.png">
+    <link rel="manifest" href="static/favicons/site.webmanifest">
 
 </head>
 
 <body class="d-flex flex-column h-100 main-bg">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-1">
         <div class="container-fluid text-info">
-            <a class="navbar-brand" href="{% url 'home' %}"><span class="brand">tFCC</span></a>
+            <a class="navbar-brand" href="{% url 'home' %}"><span class="brand"><img id='nav-icon' loading="lazy"
+                        src="https://res.cloudinary.com/dpfuyoali/image/upload/hyhrvescn4gkopss7ps9"
+                        alt="Castle Icon"></span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -70,23 +77,22 @@
                     </li>
                     {% endif %}
                 </ul>
-                <span class="navbar-text text-muted">
-                    The Fancy Cinema Castle
-                </span>
             </div>
         </div>
     </nav>
 
-    <main class="flex-shrink-0 main-bg">
+    <main class="flex-shrink-0 main-bg bg-dark">
         {% if user.is_authenticated %}
         <p class='text-end m-3'>You are logged in as {{ user }}</p>
         {% else %}
         <p class='text-end m-3'>You are not logged in</p>
-        {% endif %}<main class="flex-shrink-0 main-bg">
-            <div class="text-primary">
-                <h1>Welcome to The Fancy Cinema Castle</h1>
+        {% endif %}<main class="flex-shrink-0 main-bg bg-dark">
+            <div class="">
+                <h1 id='h1'>Welcome to The Fancy Cinema Castle</h1>
             </div>
-
+            <img id='cinema-castle' loading="lazy"
+                src="https://res.cloudinary.com/dpfuyoali/image/upload/The Fancy Cinema Castle/xsavj5bsme6swc90sj4q.jpg"
+                alt="Cinema Castle">
             {% block content %}
             <!-- Content Goes here -->
             {% endblock content %}
