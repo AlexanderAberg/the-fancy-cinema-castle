@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from cloudinary.models import CloudinaryField
 
 # Create your views here.
 def about(request):
