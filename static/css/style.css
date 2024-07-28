@@ -7,16 +7,10 @@ body {
     height: 100%;
     background-repeat: no-repeat;
     background-size: contain;
-    border: 1px solid darkmagenta;
+    border: 1px solid #8b008b;
     z-index: 0;
     position: absolute;
 }
-
-#h1 {
-    color: rgb(225, 201, 201);
-}
-
-
 
 .brand {
     font-family: Lato, sans-serif;

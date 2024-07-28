@@ -22,7 +22,7 @@ class Book(models.Model):
     ) 
 
     def __str__(self):
-        return self.user | self.date
+        return self.booker | self.date
 
 
 class Meta:
