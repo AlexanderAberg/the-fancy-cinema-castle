@@ -22,7 +22,7 @@ Renders the form in the Booking Manager.
             book_form.save()
             messages.add_message(request, messages.SUCCESS, "Thank you for booking an auditorium, we will see you soon.")
 
-    bookings = Bookings.objects.all().order_by('-updated_on').first()
+   
     book_form = BookForm()
 
     return render(

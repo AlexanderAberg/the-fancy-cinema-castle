@@ -1,6 +1,5 @@
 from django.db import models
 from django.contrib.auth.models import User
-from cloudinary.models import CloudinaryField
 from django.utils import timezone
 from django.core.validators import MinValueValidator, MaxValueValidator
 
@@ -23,7 +22,7 @@ class Book(models.Model):
     ) 
 
     def __str__(self):
-        return self.name | self.date
+        return self.user | self.date
 
 
 class Meta:
