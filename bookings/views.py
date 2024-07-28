@@ -13,6 +13,9 @@ class Bookings(generic.ListView):
 
 
 def bookings(request):
+    """
+Renders the form in the Booking Manager.
+    """
     if request.method == "POST":
         book_form = BookForm(data=request.POST)
         if book_form.is_valid():
@@ -41,7 +44,7 @@ def book_edit(request, slug, book_id):
     ``booking``
         An instance of :model:`booking.Post`.
     ``book``
-        A single comment related to the post.
+        A single book related to the booking manager.
     ``book_form``
         An instance of :form:`bookings.BookForm`
     """
@@ -74,7 +77,7 @@ def book_delete(request, slug, book_id):
     ``booking``
         An instance of :model:`book.Post`.
     ``book``
-        A single book related to the post.
+        A single book related to the booking manager.
     """
     queryset = Post.objects.filter(status=1)
     post = get_object_or_404(queryset, slug=slug)
