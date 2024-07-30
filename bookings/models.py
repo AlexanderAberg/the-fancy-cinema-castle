@@ -4,7 +4,6 @@ from django.utils import timezone
 from django.core.validators import MinValueValidator, MaxValueValidator
 
 SESSIONS= ((0, 'Action Movies'), (1, 'Comedy Movies'), (2, 'Drama Movies'), (3, 'Video Games'))
-OPTIONS= ((0, 'Finger Food'), (1, 'Snacks'), (2, 'Craft Beer'), (3, 'Soda'))
 
 # Create your models here.
 class Book(models.Model):
@@ -12,7 +11,6 @@ class Book(models.Model):
     date = models.DateTimeField()
     amount = models.PositiveIntegerField(validators=[MinValueValidator(2), MaxValueValidator(20)])
     session_type = models.IntegerField(choices=SESSIONS, default='3')
-    options = models.BooleanField(choices=OPTIONS, blank=True, null=True)
     wishes = models.TextField(blank=True, verbose_name='Wishes & Information', max_length=500)
 
     booker = models.ForeignKey(
@@ -22,8 +20,8 @@ class Book(models.Model):
     ) 
 
     def __str__(self):
-        return self.booker | self.date
+        return f'{self.booker}, {self.date}'
 
-
-class Meta:
-    ordering = ['-date']
+class Options(models.Model):
+    name = models.CharField(max_length=50)
+    booking = models.ManyToManyField(Book)

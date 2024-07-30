@@ -1,8 +1,9 @@
 from django.contrib import admin
 from django_summernote.admin import SummernoteModelAdmin
 from .models import Book
+from .models import Options
 
-
+# Register your models here.
 @admin.register(Book)
 class BookAdmin(SummernoteModelAdmin):
 
@@ -11,4 +12,5 @@ class BookAdmin(SummernoteModelAdmin):
     list_filter = ('date',)
     summernote_fields = ('content',)
 
-# Register your models here.
+
+admin.site.register(Options)
