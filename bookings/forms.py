@@ -3,6 +3,12 @@ from .models import Book
 
 #Creates a form based on the model.
 class BookForm(forms.ModelForm):
+
+   # options = forms.ModelMultipleChoiceField(
+    #    queryset=Options.objects.all(),
+     #   widget=forms.CheckboxSelectMultiple
+    #)
+
     class Meta:
         model = Book
         fields = ('date', 'amount', 'session_type', 'wishes')

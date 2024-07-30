@@ -11,7 +11,11 @@ class Book(models.Model):
     date = models.DateTimeField()
     amount = models.PositiveIntegerField(validators=[MinValueValidator(2), MaxValueValidator(20)])
     session_type = models.IntegerField(choices=SESSIONS, default='3')
-    wishes = models.TextField(blank=True, verbose_name='Wishes & Information', max_length=500)
+ #   options = models.ManyToManyField(
+  #      name=models.CharField(max_length=50)
+   # )
+    wishes = models.TextField(
+        blank=True, verbose_name='Wishes & Information', max_length=500)
 
     booker = models.ForeignKey(
         User,
@@ -21,7 +25,3 @@ class Book(models.Model):
 
     def __str__(self):
         return f'{self.booker}, {self.date}'
-
-class Options(models.Model):
-    name = models.CharField(max_length=50)
-    booking = models.ManyToManyField(Book)
