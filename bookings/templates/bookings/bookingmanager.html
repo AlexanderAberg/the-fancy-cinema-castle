@@ -44,6 +44,8 @@
                                 <div id="book{{ book.id }}">
                                     {{ book.body | linebreaks }}
                                 </div>
+                                {% if not book.approved and book.author == user %}
+                                <p class="approval">This book is awaiting approval</p>
                                 {% endif %}
                                 {% if user.is_authenticated and book.author == user %}
                                 <button class="btn btn-delete" data-book_id="{{ book.id }}">Delete</button>
