@@ -12,6 +12,11 @@ body {
     position: absolute;
 }
 
+.spacer {
+    height:65px;
+    width: 100%;
+}
+
 .log-register {
     position: absolute;
 }
