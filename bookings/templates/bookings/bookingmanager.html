@@ -33,20 +33,17 @@
                         <h3>Booking Manager:</h3>
                         <div class="card-body">
                             <!-- We want a for loop inside the empty control tags to iterate through each booking-->
-                            {% for booking in book %}
-                            <div
-                                class="p-2 book{% if not book.approved and book.author == user %} faded{% elif not book.approved %} d-none{% endif %}">
+                            {% for booking in bookings %}
+                            <div class="p-2">
                                 <p class="font-weight-bold">
-                                    {{ book.author }}
+                                    {{ booking.booker }}
                                     <span class="font-weight-normal">
-                                        {{ book.created_on }}
+                                        {{ booking.created_on }}
                                     </span> wrote:
                                 </p>
                                 <div id="book{{ book.id }}">
                                     {{ book.body | linebreaks }}
                                 </div>
-                                {% if not book.approved and book.author == user %}
-                                <p class="approval">This book is awaiting approval</p>
                                 {% endif %}
                                 {% if user.is_authenticated and book.author == user %}
                                 <button class="btn btn-delete" data-book_id="{{ book.id }}">Delete</button>
