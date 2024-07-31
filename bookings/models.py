@@ -11,9 +11,7 @@ class Book(models.Model):
     date = models.DateTimeField()
     amount = models.PositiveIntegerField(validators=[MinValueValidator(2), MaxValueValidator(20)])
     session_type = models.IntegerField(choices=SESSIONS, default='3')
- #   options = models.ManyToManyField(
-  #      name=models.CharField(max_length=50)
-   # )
+ #   options = models.ManyToManyField(Option)
     wishes = models.TextField(
         blank=True, verbose_name='Wishes & Information', max_length=500)
 
