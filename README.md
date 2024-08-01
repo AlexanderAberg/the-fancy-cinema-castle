@@ -10,37 +10,49 @@
 # UX
 ### Visitor Goals
 The expected visitor is:
-- Visitors that wants to understand more about sexual health and sexual transmitted diseases and infections.
-- Visitors that believe that they or someone else has a sexual transmitted disease or infection.
-- Visitors that wants to get a suggestion about the next step for their sexual transmitted diseases and infections.
+- Visitors that wants to watch a movie or play games with friends.
+- Visitors that wants to go to the cinema without having random people in the auditorium but instead people they choose.
+- Visitors that wants to have a great time with friends and family.
 
 Visitors goals are:
-- Read facts about the sexual transmitted diseases.
-- Go through the quiz to strenghtening or weakening the belief they or others are affected by a sexual transmitted disease or infection.
-- Get suggestions what to do including tests and contacting health professionals.
+- Be able to book an auditorium according to their wishes.
+- See what is on offer.
+- Read about the concepy.
 
-How STIgma Free fills the needs:
-- You can get information about different infections.
-- You can do a quiz to find out if you have an increased risk of being infected.
-- The page is easy to use to get the information you need and you get recommendations to get tests or contact health professionals.
+How The Fancy Cinema Castle fills the needs:
+- You can get information about different auditoriums.
+- You can read about the concept.
+- You can register to book the aditorium, which you later can edit and cancel if your circumstances changes.
 
 
 ### Business Goals
 The Business Goals are:
-- Spread awareness of sexually transmitted infections judgement free and make people test and contact health clinics.
-- Get people to be able to contact our partners in the health care industry.
-- If enough people will be aware the bigger chance that we will eradicate the infections and diseases.
+- To give a superior experience compared to a normal cinema.
+- To also offer you to play video games on a cutting edge cinema auditorium.
+- To give you a great time.
 
 ### User Stories
-1. As a person with an active sex life I would want to protect my sexual health.
-0. I expect to be able to find out if I am in a risk of having an STI or STD.
-0. I will be able to read up on STI's and STD's to prevent it from spreading to me.
+1. As a Site Creator I can deploy the project so that I can make it accessible for the user.
+2. As a Site User I can register an account so that I can book an auditorium.
+3. As a Site User I can use a navigation bar so that I can in an easy way find what I am looking for.
+4. As a Site User I can navigate through with all links and buttons so that I can the full use of the site.
+5. As a Site User I can get info from the footer so that I can get contact information and address of the company.
+6. As a Site User I can create a booking so that I can be able to book an auditorium.
+7. As a Site User I can see relevant icons on the site so that I can get a better UX.
+8. As a Site User I can get more info about the specific auditorums so that I can understand what is on offer.
+9. As a Site User I can use the booking manager so that I can make a correct booking.
+10. As a Site User I can get information about the concepts and book so that I can get an understanding of the business.
+11. As a Site User I can look at a carousel on home page so that I can see my auditorium options.
+12. As a Site User I can see pictures so that I can see what it looks like.
+13. As a Site User I can edit and cancel my booking so that I can adjust to my wants and needs.
+14. As a Site Admin I can see other peoples bookings so that I can prepare the staff.
+15. As a Site User I can edit my profile so that I can have my info up to date.
 
 
 ### Existing Features
 
 - __Header__
-  - Header has a menu with a nav bar or text on bigger screens and the website name in a logo.
+  - Header has a menu with a nav bar or text on bigger screens and a logo.
 
 <img src="assets/images/header.png" alt="Header">
 
@@ -179,21 +191,20 @@ to find out about infections in time.
 
 ### Credits 
 
-Favicon from  <a href="https://favicon.io/emoji-favicons/rainbow-flag/">Icon by John Sorrentino and open source project Twemoji.</a>
+Favicon from Freepik and created with https://favicon.io/favicon-converter/ <a href="https://favicon.io/emoji-favicons/rainbow-flag/">Icon by Smashicons.</a>
 
-- STI & STD information from 1177, RFSL, NHS and internetmedicin.se
-- Colour image from Coolors.co
-- Images from pexels.com and pixelsquid.com
+- Help and support from tutors and my mentor Rory Patrick.
 
 
 ### Content 
 
-- STI & STD information from 1177, RFSL, NHS and internetmedicin.se
+- 
 
 
 ### Media
 
-- Used Freepik AI to create the cinema castle image.
+- Used Freepik AI to create the cinema castle image and the images in the carousel.
+- Icon and Favicon from https://www.freepik.com/icon/haunted-house_950727 
 
 
 ### Wireframe
