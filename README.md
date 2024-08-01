@@ -183,10 +183,18 @@ to find out about infections in time.
   - From the source section drop-down menu, select the Master Branch
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
   - You can either copy the link for Code or Open in a new repository or see the live version under Deployment to the right under github-pages.
-  - In GitHub you can open every seperate file including html. css. images and even favicons and see the folder structure.
-  - It is possible to check the commit history in github-pages under Deployment to the right
+  - In GitHub you can open every seperate file and see the folder structure.
+  - It is possible to check the commit history in github-pages under Deployment to the right.
+- What to do in Heroku:
+  - Create a new app in Heroku, name it and choose your region before pushing button to create app.
+  - In the next page press settings, scroll down to Config Vars and push the button, here you add CLUuDINARY_URL, DATABASE_URL and SECRET_KEY with all the relevant keys related to your cloudinary account, database and secret key.
+  - Now you go up to switch to Deploy in the tab and here you press the GitHub icon with the GitHub text to connect to GitHub and after that press Connect to GitHub button below.
+  - You will get a name choice where you choose your GitHub and search for the correct respository and then press connect.
+  - You will now be able to press Enable Automatic Deploys to make changes come automatically or do a manual deploy through the button Deploy Branch which will give you access already after about 30 seconds,
+  after the 30 seconds give or take depending on your internet speed and computer you can press view and now you have access to use the app.
+  - Now you will also be able to find the deployment in GitHub including all commits that was done after the deployment
 
-  - Link to the live version of the project can be found here: - <a href="https://johanplar.github.io/Stigma_Free/"> and to the GitHub page here: <a href="https://github.com/JohanPlAr/Stigma_Free"> 
+  - Link to the live version of the project can be found here: - <a href="https://the-fancy-cinema-castle-7eb7ea1dedc6.herokuapp.com/"> and to the GitHub page here: <a href="https://github.com/AlexanderAberg/the-fancy-cinema-castle"> 
 
 
 ### Credits 
@@ -198,7 +206,7 @@ Favicon from Freepik and created with https://favicon.io/favicon-converter/ <a h
 
 ### Content 
 
-- 
+- Content is made up.
 
 
 ### Media
@@ -209,7 +217,7 @@ Favicon from Freepik and created with https://favicon.io/favicon-converter/ <a h
 
 ### Wireframe
 
-- Used Balsamiq for Wireframe and pen + paper
+- Used Balsamiq for Wireframe
 
 <img src="assets/images/manual-wireframe.jpg" alt="Wireframe on Paper">
 <img src="assets/images/wireframe-home.png" alt="Wireframe for Home">
@@ -220,7 +228,7 @@ Favicon from Freepik and created with https://favicon.io/favicon-converter/ <a h
 
 ### Flowchart
 
-- Flowchart made with pen and paper
+- Flowchart made with Lucid Charts.
 
 <img src="assets/images/manual-flowchart.jpg" alt="Flowchart on Paper">
 
@@ -228,21 +236,22 @@ Favicon from Freepik and created with https://favicon.io/favicon-converter/ <a h
 ### Technologies Used
 
 - HTML - For how the website with the pages is built and planned 
-- CSS - For all the styling
-- JS - For the Questionnaire and to change between std's
-- Images  -  pexels and PixelSquid
+- CSS - For styling
+- JS - For edit and delete on form
+- Python - For backend
+- Django - As Python framework
+- Bootstrap - For styling
+- Images  - Freepik including their AI
 - Fonts - From Google Fonts
 - Icons - From Fontawesome 
-- Wireframe - From Balsamiq + Pen & Paper
-- Flowchart - Pen & Paper
-- Favicons - Icon from Favicon.io
+- Wireframe - From Balsamiq
+- Flowchart - Lucid Charts
+- Favicons - Icon from Freepik and generated with Favicon.io
 - Mockup - Generated at amiresponsive 
-- Rainbow colours inspired by LGTBQI+ community.
 - Google Devtools to check responsiveness and to check Lighthouse for Accessibility
 - GitHub for storing the project and deploying it
-- Gitpod and Codespaces for project development
-- Slack for communication with the team
-- Google Sheets for information
+- Gitpod and Visual Studio Code for project development
+
 
 
 ### Colours
