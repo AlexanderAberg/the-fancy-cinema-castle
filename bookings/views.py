@@ -3,7 +3,7 @@ from django.views import generic
 from django.contrib import messages
 from django.http import HttpResponseRedirect
 from .models import Book
-from .models import Options
+#from .models import Options
 from .forms import BookForm
 from cloudinary.models import CloudinaryField
 
