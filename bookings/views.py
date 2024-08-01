@@ -3,6 +3,7 @@ from django.views import generic
 from django.contrib import messages
 from django.http import HttpResponseRedirect
 from .models import Book
+from .models import Options
 from .forms import BookForm
 from cloudinary.models import CloudinaryField
 
@@ -46,7 +47,7 @@ def book_edit(request, slug, book_id):
     **Context**
 
     ``booking``
-        An instance of :model:`booking.Post`.
+        An instance of :model:`booking.Book`.
     ``book``
         A single book related to the booking manager.
     ``book_form``
@@ -78,7 +79,7 @@ def book_delete(request, slug, book_id):
     **Context**
 
     ``booking``
-        An instance of :model:`book.Post`.
+        An instance of :model:`book.Book`.
     ``book``
         A single book related to the booking manager.
     """
