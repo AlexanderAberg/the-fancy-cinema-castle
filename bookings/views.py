@@ -17,7 +17,7 @@ def bookings(request):
     """
 Renders the form in the Booking Manager.
     """
-    bookings = Book.objects.filter(booker=request.user)
+    bookings = Book.objects.filter(booker=request.user.id)
 
     if request.method == "POST":
         book_form = BookForm(data=request.POST)

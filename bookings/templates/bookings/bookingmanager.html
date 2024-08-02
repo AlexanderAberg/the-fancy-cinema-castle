@@ -8,7 +8,7 @@
 <div class="container-fluid">
     <div class="row">
 
-
+        
         <div class="col-12 mt-3 left">
             <div class="row">
                 <div class="col-md-4">
@@ -29,30 +29,32 @@
                 <div class="row">
                     <div class="col-md-8 card mb-4 mt-3 ">
                         <h3>Booking Manager:</h3>
+                        {% if bookings %}
+                        {% for booking in bookings %}
                         <div class="card-body">
                             <!-- We want a for loop inside the empty control tags to iterate through each booking-->
-                            {% for bookings in booking %}
                             <div class="p-2">
                                 <p class="font-weight-bold">
                                     {{ booking.booker }}
                                     <span class="font-weight-normal">
-                                        {{ booking.created_on }}
+                                        {{ booking.date }}
                                     </span> wrote:
                                 </p>
                                 <div id="book{{ book.id }}">
-                                    {{ book.body | linebreaks }}
+                                    {{ book.session_type | linebreaks }}
                                 </div>
-                                {% if not book.approved and book.author == user %}
+                                {% if not book.approved and book.booker == user %}
                                 <p class="approval">This book is awaiting approval</p>
                                 {% endif %}
-                                {% if user.is_authenticated and book.author == user %}
+                                {% if user.is_authenticated and book.booker == user %}
                                 <button class="btn btn-delete" data-book_id="{{ book.id }}">Delete</button>
                                 <button class="btn btn-edit" data-book_id="{{ book.id }}">Edit</button>
                                 {% endif %}
                             </div>
                             <!-- Our for loop ends here -->
-                            {% endfor %}
                         </div>
+                        {% endfor %}
+                        {% endif %}
                     </div>
                     <div class="col-md-4 card mb-4 mt-3 ">
                         <div class="card-body">

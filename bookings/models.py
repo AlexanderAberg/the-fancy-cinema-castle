@@ -9,10 +9,10 @@ OPTIONS= ((0, 'Finger Food'), (1, 'Snacks'), (2, 'Craft Beer'), (3, 'Soda'))
 # Create your models here.
 class Book(models.Model):
     #The Booking Manager
-    date = models.DateTimeField()
+    date = models.DateTimeField(default=timezone.now)
     amount = models.PositiveIntegerField(validators=[MinValueValidator(2), MaxValueValidator(20)])
     session_type = models.IntegerField(choices=SESSIONS, default='3')
-    options = models.CharField(choices=OPTIONS)
+    options = models.IntegerField(choices=OPTIONS)
     wishes = models.TextField(
         blank=True, verbose_name='Wishes & Information', max_length=500)
 
