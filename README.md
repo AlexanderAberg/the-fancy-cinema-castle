@@ -161,6 +161,9 @@ to find out about infections in time.
 ### Unfixed and fixed Bugs
 
 - Solved all known bugs.
+- I had a hard time making the forms for register, log in and log out show up while at the same time letting the background being placed correctly.
+I solved it by removing some classes and by changing the z-index for the background to be behind content, but it wasn't enough for the forms, so I also had to create a new form class with an absolute position.
+This took some time and a lot of try and error, trying to find resources mainly on the bootstrap website, checking slack and then contacting Sarah on Tutor Support that suggested looking at the position of the specific forms and to create a class related to it.
 
 
 ### Quality Score through Google Devtools Lighthouse
@@ -211,7 +214,7 @@ Favicon from Freepik and created with https://favicon.io/favicon-converter/ <a h
 
 ### Media
 
-- Used Freepik AI to create the cinema castle image and the images in the carousel.
+- Used Freepik AI to create the cinema castle image and the images in the carouse, here is link to the tool: https://www.freepik.com/pikaso/ai-image-generator.
 - Icon and Favicon from https://www.freepik.com/icon/haunted-house_950727 
 
 
@@ -256,6 +259,6 @@ Favicon from Freepik and created with https://favicon.io/favicon-converter/ <a h
 
 ### Colours
 
-- Did choose colours that is colourful according to rainbows with a white base for readabillity, you can find the colours on the borders, logos and icons.
+- 
 
 <img src="assets/images/colours.png" alt="Rainbow Colours + White">
