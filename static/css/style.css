@@ -15,13 +15,18 @@ body {
     position: absolute;
 }
 
+.log-register {
+    position: absolute;
+}
+
 .spacer {
     height: 65px;
     width: 100%;
 }
 
-.log-register {
-    position: absolute;
+.opacity {
+    background-color: #46525e44;
+    
 }
 
 .brand {

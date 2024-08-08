@@ -24,6 +24,11 @@ body {
     width: 100%;
 }
 
+.opacity {
+    background-color: #46525e44;
+    
+}
+
 .brand {
     font-family: "Instrument Serif", serif;
     font-size: 1.4rem;
