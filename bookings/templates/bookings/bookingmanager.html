@@ -43,8 +43,7 @@
                                 <div id="book{{ book.id }}">
                                     {{ book.session_type | linebreaks }}
                                 </div>
-                                {% if not book.approved and book.booker == user %}
-                                <p class="approval">This book is awaiting approval</p>
+                                {% if not book.booker == user %}
                                 {% endif %}
                                 {% if user.is_authenticated and book.booker == user %}
                                 <button class="btn btn-delete" data-book_id="{{ book.id }}">Delete</button>
