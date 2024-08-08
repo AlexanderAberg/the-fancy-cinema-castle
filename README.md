@@ -2,7 +2,7 @@
 - The Fancy Cinema Castle is a page where you can book auditoriums for viewing movies or play games.
 - It is an esclusive experience and compared to a normal cinema you book the whole auditorium and not just a couple of seats.
 - You will be able to see what is on offer in a user friendly site.
-- Link to the live version of the project can be found here: - <a href="http"> and to the GitHub page here: <a href="https://github.com/AlexanderAberg/the-fancy-cinema-castle"> 
+- Link to the live version of the project can be found here: - <a href="https://the-fancy-cinema-castle-7eb7ea1dedc6.herokuapp.com/"> and to the GitHub page here: <a href="https://github.com/AlexanderAberg/the-fancy-cinema-castle"> 
 
 <img src="assets/images/amiresponsive.png" alt="Responsive Screens">
 
@@ -17,7 +17,7 @@ The expected visitor is:
 Visitors goals are:
 - Be able to book an auditorium according to their wishes.
 - See what is on offer.
-- Read about the concepy.
+- Read about the concept.
 
 How The Fancy Cinema Castle fills the needs:
 - You can get information about different auditoriums.
@@ -222,18 +222,24 @@ Favicon from Freepik and created with https://favicon.io/favicon-converter/ <a h
 
 - Used Balsamiq for Wireframe
 
-<img src="assets/images/manual-wireframe.jpg" alt="Wireframe on Paper">
-<img src="assets/images/wireframe-home.png" alt="Wireframe for Home">
-<img src="assets/images/wireframe-info.png" alt="Wireframe for Info">
-<img src="assets/images/wireframe-questionnaire.png" alt="Wireframe for Questionnaire">
-<img src="assets/images/wireframe-team.png" alt="Wireframe for Team">
+<img src="assets/images/wireframe-desktop-home.png" alt="Wireframe on Desktop for Home page">
+<img src="assets/images/wireframe-desktop-about.png" alt="Wireframe on Desktop for About page">
+<img src="assets/images/wireframe-desktop-bookings.png" alt="Wireframe on Desktop for Bookings page">
+<br>
+<img src="assets/images/wireframe-tablet-home.png" alt="Wireframe on Tablet for Home page">
+<img src="assets/images/wireframe-tablet-about.png" alt="Wireframe on Tablet for About page">
+<img src="assets/images/wireframe-tablet-bookings.png" alt="Wireframe on Tablet for Bookings page">
+<br>
+<img src="assets/images/wireframe-phone.png" alt="Wireframe on Phone for all 3 pages>
+
+<br>
 
 
 ### Flowchart
 
 - Flowchart made with Lucid Charts.
 
-<img src="assets/images/manual-flowchart.jpg" alt="Flowchart on Paper">
+<img src="assets/images/flowchart.png" alt="Lucid Charts Flowchart">
 
 
 ### Technologies Used
@@ -252,7 +258,8 @@ Favicon from Freepik and created with https://favicon.io/favicon-converter/ <a h
 - Favicons - Icon from Freepik and generated with Favicon.io
 - Mockup - Generated at amiresponsive 
 - Google Devtools to check responsiveness and to check Lighthouse for Accessibility
-- GitHub for storing the project and deploying it
+- GitHub for storing the project and to get to the deployed version
+- Heroku - For deploying the project
 - Gitpod and Visual Studio Code for project development
 
 
