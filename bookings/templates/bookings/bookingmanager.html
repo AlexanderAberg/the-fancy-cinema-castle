@@ -8,7 +8,7 @@
 <div class="container-fluid">
     <div class="row">
 
-        
+
         <div class="col-12 mt-3 left">
             <div class="row">
                 <div class="col-md-4">
@@ -45,7 +45,7 @@
                                 </div>
                                 {% if not book.booker == user %}
                                 {% endif %}
-                                {% if user.is_authenticated and book.booker == user %}
+                                {% if user.is_authenticated and booking.booker == user %}
                                 <button class="btn btn-delete" data-book_id="{{ book.id }}">Delete</button>
                                 <button class="btn btn-edit" data-book_id="{{ book.id }}">Edit</button>
                                 {% endif %}
