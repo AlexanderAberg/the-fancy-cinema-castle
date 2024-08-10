@@ -2,7 +2,8 @@
 - The Fancy Cinema Castle is a page where you can book auditoriums for viewing movies or play games.
 - It is an esclusive experience and compared to a normal cinema you book the whole auditorium and not just a couple of seats.
 - You will be able to see what is on offer in a user friendly site.
-- Link to the live version of the project can be found here: <a href="https://the-fancy-cinema-castle-7eb7ea1dedc6.herokuapp.com/"> and to the GitHub page here: <a href="https://github.com/AlexanderAberg/the-fancy-cinema-castle"> 
+- Link to the live version of the project can be found here: https://the-fancy-cinema-castle-7eb7ea1dedc6.herokuapp.com/
+- Link to the GitHub page here: https://github.com/AlexanderAberg/the-fancy-cinema-castle 
 
 <img src="assets/images/amiresponsive.png" alt="Responsive Screens">
 
@@ -189,7 +190,7 @@ This took some time and a lot of try and error, trying to find resources mainly 
   after the 30 seconds give or take depending on your internet speed and computer you can press view and now you have access to use the app.
   - Now you will also be able to find the deployment in GitHub including all commits that was done after the deployment
 
-  - Link to the live version of the project can be found here: - <a href="https://the-fancy-cinema-castle-7eb7ea1dedc6.herokuapp.com/"> and to the GitHub page here: <a href="https://github.com/AlexanderAberg/the-fancy-cinema-castle"> 
+  - Link to the live version of the project can be found here: - https://the-fancy-cinema-castle-7eb7ea1dedc6.herokuapp.com and to the GitHub page here: https://github.com/AlexanderAberg/the-fancy-cinema-castle
 
 
 ### Credits 
@@ -253,7 +254,8 @@ This took some time and a lot of try and error, trying to find resources mainly 
 - Google Devtools - to check responsiveness and to check Lighthouse for Accessibility
 - GitHub - for storing the project and to get to the deployed version, also for User Stories with Kanban
 - Heroku - For deploying the project
-- Gitpod and Visual Studio Code for project development
+- Project Development - GitHub and Visual Studios
+- Markup - For this README
 
 
 
