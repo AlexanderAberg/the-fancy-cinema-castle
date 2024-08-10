@@ -2,7 +2,7 @@
 - The Fancy Cinema Castle is a page where you can book auditoriums for viewing movies or play games.
 - It is an esclusive experience and compared to a normal cinema you book the whole auditorium and not just a couple of seats.
 - You will be able to see what is on offer in a user friendly site.
-- Link to the live version of the project can be found here: - <a href="https://the-fancy-cinema-castle-7eb7ea1dedc6.herokuapp.com/"> and to the GitHub page here: <a href="https://github.com/AlexanderAberg/the-fancy-cinema-castle"> 
+- Link to the live version of the project can be found here: <a href="https://the-fancy-cinema-castle-7eb7ea1dedc6.herokuapp.com/"> and to the GitHub page here: <a href="https://github.com/AlexanderAberg/the-fancy-cinema-castle"> 
 
 <img src="assets/images/amiresponsive.png" alt="Responsive Screens">
 
@@ -48,11 +48,12 @@ The Business Goals are:
 14. As a Site Admin I can see other peoples bookings so that I can prepare the staff.
 15. As a Site User I can edit my profile so that I can have my info up to date.
 
+<img src="assets/images/user-stories.png" alt="User Stories Kanban">
 
 ### Existing Features
 
 - __Header__
-  - Header has a menu with a nav bar or text on bigger screens and a logo.
+  - Header has a menu with a nav bar or text on bigger screens and a logo of a castle with a ghost, which you can also see on the favicon.
 
 <img src="assets/images/header.png" alt="Header">
 
@@ -64,44 +65,44 @@ The Business Goals are:
 
 - __The landing page images__
 
-  - The landing page or "Home" has a questionnare and some short information about the STI's with a button on each to read more, which will take them to the correct section in the info page. 
-  - It also have small pictures for each disease and infection and when you click them you get a bigger version.
-  - At top of page you can read what to think about under a picture and underneat you can take the questionnaire which will take you to the questionnaire page.
-  - The page has some short information about all diseases and infetions, it also have pictures and if you press condom buttons you can read more on the related page.
+  - The landing page or "Home" has a carousel with pictures and some information about the concept.
+  - The carousel has links to bookings, a subheader and an AI created image related to the auditorium on each side.
 
 <img src="assets/images/landingpage.png" alt="Landing Page">
 
-- __STDs__
+- __The background picture__
 
-  - The button will make you able to reach information about all 9 STI and STD.
+  - The background picture can be seen on all pages, is AI generated and is a castle with a cinema auditorium outside, the dark colours is to make it look good on all screen sizes.
 
-- __Disease and Infection pages__
+<img src="assets/images/background.png" alt="Background">
 
-  - The 9 pages will let you read about the infections and diseases 
+- __About page__
 
-<img src="assets/images/std-sti.png" alt="Disease and Infection pages">
+  - The about page has information about each auditorium and links to bookings. 
 
-- __Questionnaire__
+<img src="assets/images/about.png" alt="About page">
 
-  - This page has a questionnaire quiz that you can take to get recommendations to contact our partner to get tests or book an apointment, if you are considered high risk we will recommend the health clinic.
+- __Bookings__
+
+  - The bookings page has the bookingmanager and the bookings.
   - The buttons will be coloured according to if it increases or decreases your risk.
 
-  <img src="assets/images/questionnaire.png" alt="Questionnaire">
+  <img src="assets/images/bookings.png" alt="Bookings page">
 
-- __Team__
+- __Booking Manager__
 
   - The Team page has information about the team, with pictures, short info and links to LinkedIn and GitHub.
 
-<img src="assets/images/team.png" alt="Team">
+<img src="assets/images/booking-manager.png" alt="Booking Manager">
 
 - __The Footer__ 
 
-  - The footer has contact information and a trademark.
+  - The footer has contact information and Copyright info.
 
 <img src="assets/images/footer.png" alt="Footer">
 
 
-### Thoughts behind our choices
+### Thoughts behind my choices
 
 - We wanted to make an inclusive and stigma free site for sexually transmittes infections.
 - We used rainbow related colours to show that we are inclusive and that you can be yourself.
@@ -257,8 +258,8 @@ Favicon from Freepik and created with https://favicon.io/favicon-converter/ <a h
 - Flowchart - Lucid Charts
 - Favicons - Icon from Freepik and generated with Favicon.io
 - Mockup - Generated at amiresponsive 
-- Google Devtools to check responsiveness and to check Lighthouse for Accessibility
-- GitHub for storing the project and to get to the deployed version
+- Google Devtools - to check responsiveness and to check Lighthouse for Accessibility
+- GitHub - for storing the project and to get to the deployed version, also for User Stories with Kanban
 - Heroku - For deploying the project
 - Gitpod and Visual Studio Code for project development
 
