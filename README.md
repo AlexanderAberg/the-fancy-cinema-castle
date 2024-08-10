@@ -48,8 +48,6 @@ The Business Goals are:
 14. As a Site Admin I can see other peoples bookings so that I can prepare the staff.
 15. As a Site User I can edit my profile so that I can have my info up to date.
 
-<img src="assets/images/user-stories.png" alt="User Stories Kanban">
-
 ### Existing Features
 
 - __Header__
@@ -66,7 +64,7 @@ The Business Goals are:
 - __The landing page images__
 
   - The landing page or "Home" has a carousel with pictures and some information about the concept.
-  - The carousel has links to bookings, a subheader and an AI created image related to the auditorium on each side.
+  - The carousel has links to bookings, a subheader and an AI created image related to the auditorium on each side, the image is castle themed while fitting the genre.
 
 <img src="assets/images/landingpage.png" alt="Landing Page">
 
@@ -104,18 +102,17 @@ The Business Goals are:
 
 ### Thoughts behind my choices
 
-- We wanted to make an inclusive and stigma free site for sexually transmittes infections.
-- We used rainbow related colours to show that we are inclusive and that you can be yourself.
-- Our direction to LGTBQI+ is because the community is more stigmatized and therefore less likely
-to find out about infections in time.
-- We want people to be able to get recommendations so they have a next step to take.
+- I wanted to make an exclusive cinema experience with video games that I would want to visit.
+- The dark colours shows excitement and does fit with a dark cinema room, also fit with castle theme.
+- The theme and pictures are very castle related, I did choose the name because it is fancy and what is more fancy than a castle?
+- I had to cut down on some ideas even if the project to 90% went my way, I did not want to make it to big because of time limits.
 
 
 ### Agile
 
-- We have worked agile to be able to adjust and fix issues that need to be prioritized.
-- High level of open communication mainly through slack.
-- The scope has changed during the course of the project according to the agile philosophy of it being most important with a good enough functioning product.
+- I planned pretty wide user stories to make it possible to change plans.
+- I have cut down on my plans which you can see on Wireframes and the flowchart.
+- The project is adjusted so future implementations is possible.
 
 
 ### Kanban
@@ -123,26 +120,20 @@ to find out about infections in time.
 - Worked in a Kanban board on GitHub to see where we are with our features in the project.
 - https://github.com/users/AlexanderAberg/projects/4/views/1
 
-<img src="assets/images/kanban.png" alt='Kanban Board'>
-
-
-### Google Sheets
-
-- Data is taken from https://docs.google.com/spreadsheets/d/1WbLvIHAxbtCMGZuvHieJsoPTi4rfxFQwe68zECg8iXQ/edit?gid=0#gid=0
-- In the future we want to make the sheet connected to make updates easier
-
-<img src="assets/images/google_sheets.png" alt='Google Sheets'>
+<img src="assets/images/user-stories.png" alt="User Stories Kanban">
 
 
 ### Features Left to Implement
 
-- In the future we want to have partners that sell tests and health clinics for the visitors to visit, instead of our current temporary pages.
+- in the booking manager it should be possible to choose the numbers of options you want or not at all, you should also have a calendar for date/time.
+- The booking manager should have a different design for choices like calendar I mentioned, but also radio buttons for sessions and checkboxes for options.
+- Should in the future be possible with only 3 time frames per auditorium and day, you should get an error if it is already booked.
+- Will be possible with editing your profile and add extra information.
 
 
 ### Testing 
 
-- We have tested on pc, mac and phones, also checked the responsivness on different screen sized without any issues.
-- We have clicked to make all links and buttons to work.
+- See separate file for testing information here: <a href="testings/">
 
 
 ### Validator Testing 
@@ -203,20 +194,20 @@ This took some time and a lot of try and error, trying to find resources mainly 
 
 ### Credits 
 
-Favicon from Freepik and created with https://favicon.io/favicon-converter/ <a href="https://favicon.io/emoji-favicons/rainbow-flag/">Icon by Smashicons.</a>
-
 - Help and support from tutors and my mentor Rory Patrick.
 
 
 ### Content 
 
-- Content is made up.
+- I made up the content and my inspiration is just normal life.
 
 
 ### Media
 
-- Used Freepik AI to create the cinema castle image and the images in the carouse, here is link to the tool: https://www.freepik.com/pikaso/ai-image-generator.
+- Used Freepik AI to create the cinema castle image and the images in the carousel, here is link to the tool: https://www.freepik.com/pikaso/ai-image-generator.
 - Icon and Favicon from https://www.freepik.com/icon/haunted-house_950727 
+- Responsive image from https://ui.dev/amiresponsive
+- Colour generator from https://coolors.co/ 
 
 
 ### Wireframe
@@ -257,7 +248,8 @@ Favicon from Freepik and created with https://favicon.io/favicon-converter/ <a h
 - Wireframe - From Balsamiq
 - Flowchart - Lucid Charts
 - Favicons - Icon from Freepik and generated with Favicon.io
-- Mockup - Generated at amiresponsive 
+- Responsive mockup - Generated at  ui.dev/amiresponsive
+- Colour generator mockup - Generated at coolors.co
 - Google Devtools - to check responsiveness and to check Lighthouse for Accessibility
 - GitHub - for storing the project and to get to the deployed version, also for User Stories with Kanban
 - Heroku - For deploying the project
@@ -267,6 +259,7 @@ Favicon from Freepik and created with https://favicon.io/favicon-converter/ <a h
 
 ### Colours
 
-- 
+- Colours that would be smooth while standing out from the images and bootstrap.
+- The image doesn't include bootstrap colours, the most used bootstrap colour is dark with light buttons and lines.
 
-<img src="assets/images/colours.png" alt="Rainbow Colours + White">
+<img src="assets/images/colours.png" alt="Colours">
