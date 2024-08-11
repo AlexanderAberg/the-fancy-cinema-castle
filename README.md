@@ -153,7 +153,8 @@ The Business Goals are:
 
 ### Unfixed and fixed Bugs
 
-- Solved all known bugs.
+- There is a bug that you don't get information about booking not possible when you for example don't have a correct date or amount of people, but the form works in a correct way so the auditorium won't get booked,
+you can also see that it isn't booked because the booking message isn't shown.
 - I had a hard time making the forms for register, log in and log out show up while at the same time letting the background being placed correctly.
 I solved it by removing some classes and by changing the z-index for the background to be behind content, but it wasn't enough for the forms, so I also had to create a new form class with an absolute position.
 This took some time and a lot of try and error, trying to find resources mainly on the bootstrap website, checking slack and then contacting Sarah on Tutor Support that suggested looking at the position of the specific forms and to create a class related to it.
@@ -211,13 +212,6 @@ This took some time and a lot of try and error, trying to find resources mainly 
 - Colour generator from https://coolors.co/ 
 
 
-### Flowchart
-
-- Flowchart made with Lucid Charts.
-
-<img src="assets/images/flowchart.png" alt="Lucid Charts Flowchart">
-
-
 
 ### Wireframe
 
@@ -236,6 +230,12 @@ This took some time and a lot of try and error, trying to find resources mainly 
 <br>
 <p hidden> To make everything after this line be visible on GitHub.</p>
 <br> 
+
+### Flowchart
+
+- Flowchart made with Lucid Charts.
+
+<img src="assets/images/flowchart.png" alt="Lucid Charts Flowchart">
 
 ### Technologies Used
 
@@ -257,7 +257,7 @@ This took some time and a lot of try and error, trying to find resources mainly 
 - GitHub - for storing the project and to get to the deployed version, also for User Stories with Kanban
 - Heroku - For deploying the project
 - Project Development - GitHub and Visual Studios
-- Markup - For this README
+- Markup - For this README and User Stories
 
 
 
