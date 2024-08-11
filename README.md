@@ -62,7 +62,7 @@ The Business Goals are:
 
 <img src="assets/images/navbar.png" alt="Nav bar">
 
-- __The landing page images__
+- __The landing page__
 
   - The landing page or "Home" has a carousel with pictures and some information about the concept.
   - The carousel has links to bookings, a subheader and an AI created image related to the auditorium on each side, the image is castle themed while fitting the genre.
@@ -211,6 +211,14 @@ This took some time and a lot of try and error, trying to find resources mainly 
 - Colour generator from https://coolors.co/ 
 
 
+### Flowchart
+
+- Flowchart made with Lucid Charts.
+
+<img src="assets/images/flowchart.png" alt="Lucid Charts Flowchart">
+
+
+
 ### Wireframe
 
 - Used Balsamiq for Wireframe
@@ -224,15 +232,6 @@ This took some time and a lot of try and error, trying to find resources mainly 
 <img src="assets/images/wireframe-tablet-bookings.png" alt="Wireframe on Tablet for Bookings page">
 <br>
 <img src="assets/images/wireframe-phone.png" alt="Wireframe on Phone for all 3 pages>
-
-<br>
-
-
-### Flowchart
-
-- Flowchart made with Lucid Charts.
-
-<img src="assets/images/flowchart.png" alt="Lucid Charts Flowchart">
 
 
 ### Technologies Used
