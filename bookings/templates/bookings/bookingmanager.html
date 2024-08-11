@@ -43,11 +43,12 @@
                                 <div id="book{{ book.id }}">
                                     {{ book.session_type | linebreaks }}
                                 </div>
-                                {% if not book.booker == user %}
+                                {% if not booking.booker == user %}
                                 {% endif %}
                                 {% if user.is_authenticated and booking.booker == user %}
-                                <button class="btn btn-delete" data-book_id="{{ book.id }}">Delete</button>
-                                <button class="btn btn-edit" data-book_id="{{ book.id }}">Edit</button>
+                                <h1>Book id : {{ booking.id }}</h1>
+                                <button class="btn btn-delete" data-book_id="{{ booking.id }}">Delete</button>
+                                <button class="btn btn-edit" data-book_id="{{ booking.id }}">Edit</button>
                                 {% endif %}
                             </div>
                             <!-- Our for loop ends here -->

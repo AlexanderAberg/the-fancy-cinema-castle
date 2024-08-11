@@ -19,7 +19,7 @@ const deleteConfirm = document.getElementById("deleteConfirm");
  */
 for (let button of editButtons) {
     button.addEventListener("click", (e) => {
-        let bookId = e.target.getAttribute("book_id");
+        let bookId = e.target.getAttribute("data-book_id");
         let bookContent = document.getElementById(`bookings${bookId}`).innerText;
         bookText.value = bookContent;
         submitButton.innerText = "Update";
@@ -39,7 +39,7 @@ for (let button of editButtons) {
  */
 for (let button of deleteButtons) {
     button.addEventListener("click", (e) => {
-        let bookId = e.target.getAttribute("book_id");
+        let bookId = e.target.getAttribute("data-book_id");
         deleteConfirm.href = `delete_book/${bookId}`;
         deleteModal.show();
     });

@@ -40,7 +40,7 @@ Renders the form in the Booking Manager.
     )
 
 
-def book_edit(request, slug, book_id):
+def book_edit(request, book_id):
     """
     Display an individual booking for edit.
 
@@ -67,12 +67,12 @@ def book_edit(request, slug, book_id):
             messages.add_message(request, messages.ERROR,
                                  'Error updating booking!')
 
-    return HttpResponseRedirect(reverse('bookingmanager', args=[slug]))
+    return HttpResponseRedirect(reverse('bookings'))
 
 
 
 
-def book_delete(request, slug, book_id):
+def book_delete(request, book_id):
     """
     Delete an individual booking.
 
@@ -93,4 +93,4 @@ def book_delete(request, slug, book_id):
         messages.add_message(request, messages.ERROR,
                              'Error with deleting booking')
 
-    return HttpResponseRedirect(reverse('bookingmanager', args=[slug]))
+    return HttpResponseRedirect(reverse('bookings'))
