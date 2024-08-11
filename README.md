@@ -235,6 +235,8 @@ This took some time and a lot of try and error, trying to find resources mainly 
 
 <br>
 <br>
+<br>
+<br>
 
 ### Technologies Used
 
