@@ -234,9 +234,8 @@ This took some time and a lot of try and error, trying to find resources mainly 
 <img src="assets/images/wireframe-phone.png" alt="Wireframe on Phone for all 3 pages>
 
 <br>
-<br>
-<br>
-<br>
+<p hidden> To make everything after this line be visible on GitHub.</p>
+<br> 
 
 ### Technologies Used
 
