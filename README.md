@@ -233,6 +233,7 @@ This took some time and a lot of try and error, trying to find resources mainly 
 <br>
 <img src="assets/images/wireframe-phone.png" alt="Wireframe on Phone for all 3 pages>
 
+<br>
 
 ### Technologies Used
 
