@@ -225,11 +225,8 @@ This took some time and a lot of try and error, trying to find resources mainly 
 <img src="assets/images/wireframe-tablet-about.png" alt="Wireframe on Tablet for About page">
 <img src="assets/images/wireframe-tablet-bookings.png" alt="Wireframe on Tablet for Bookings page">
 <br>
-<img src="assets/images/wireframe-phone.png" alt="Wireframe on Phone for all 3 pages>
+<img src="assets/images/wireframe-phone.png" alt="Wireframe on Phone for all 3 pages">
 
-<br>
-<p hidden> To make everything after this line be visible on GitHub.</p>
-<br> 
 
 ### Flowchart
 
