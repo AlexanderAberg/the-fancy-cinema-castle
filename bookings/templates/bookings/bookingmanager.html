@@ -30,32 +30,45 @@
                     <div class="col-md-8 card mb-4 mt-3 ">
                         <h3>Booking Manager:</h3>
                         {% if bookings %}
+                        <div class="d-flex justify-content-between">
                         {% for booking in bookings %}
-                        <div class="card-body">
-                            <!-- We want a for loop inside the empty control tags to iterate through each booking-->
-                            <div class="p-2">
-                                <p class="font-weight-bold">
-                                    {{ booking.booker }}
-                                    <span class="font-weight-normal">
-                                        {{ booking.date }}
-                                    </span>
-                                </p>
-                                <div id="book{{ book.id }}">
-                                    {{ book.session_type | linebreaks }}
+                            <div class="card-body">
+                                <!-- We want a for loop inside the empty control tags to iterate through each booking-->
+                                <div class="p-2">
+                                    <p class="font-weight-bold">
+                                        {{ booking.booker }}
+                                        <span class="font-weight-normal">
+                                            {{ booking.date }}
+                                        </span>
+                                    </p>
+                                    <div> Amount: {{ booking.amount }} </div>
+                                    <div> Auditorium: {{ booking.get_session_type_display | linebreaks }}</div>
+                                    <div> Options: {{ booking.get_options_display | linebreaks }} </div>
+                                    <div> Wishes: {{ booking.wishes | linebreaks }} </div>
+                                
+                                    {% if user.is_authenticated and booking.booker == user %}
+                                    <h4>Book id : {{ booking.id }}</h4>
+                                    <button class="btn btn-delete" data-book_id="{{ booking.id }}">Delete</button>
+                                    <button class="btn btn-edit"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#editModal"
+                                        data-action-url="{% url 'book_edit' booking.id %}"
+                                        data-book-id="{{ booking.id }}">
+                                        Edit
+                                    </button>
+                                    {% endif %}
                                 </div>
-                                {% if not booking.booker == user %}
-                                {% endif %}
-                                {% if user.is_authenticated and booking.booker == user %}
-                                <h1>Book id : {{ booking.id }}</h1>
-                                <button class="btn btn-delete" data-book_id="{{ booking.id }}">Delete</button>
-                                <button class="btn btn-edit" data-book_id="{{ booking.id }}">Edit</button>
-                                {% endif %}
+                                <!-- Our for loop ends here -->
                             </div>
-                            <!-- Our for loop ends here -->
-                        </div>
                         {% endfor %}
+                        </div>
                         {% endif %}
                     </div>
+                    {% if bookings|length > 1 %}
+                    <div class="card mb-4 mt-5">
+                        <p class="text-center fs-3">Only 2 bookings allowed!</p>
+                    </div>
+                    {% else %}
                     <div class="col-md-4 card mb-4 mt-3 ">
                         <div class="card-body">
                             {% if user.is_authenticated %}
@@ -71,6 +84,7 @@
                             {% endif %}
                         </div>
                     </div>
+                    {% endif %}
                 </div>
             </div>
             <!-- Delete confirmation modal -->
@@ -89,6 +103,57 @@
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                             <a id="deleteConfirm" href="#" class="btn btn-danger">Delete</a>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Update booking modal -->
+            <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content bg-dark">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="editModalLabel">Edit Booking</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <form id="editBookingForm" method="post">
+                            {% csrf_token %}
+                            <input type="hidden" name="id" id="id_book_id">
+                            <div class="modal-body">
+                                <!-- Form fields -->
+                                <div class="form-group">
+                                    <label for="id_session_type">Session Type</label>
+                                    <select id="id_session_type" name="session_type" class="form-control">
+                                        {% for value, label in session_type_choices %}
+                                        <option value="{{ value }}">{{ label }}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="id_amount">Amount</label>
+                                    <input type="number" id="id_amount" name="amount" class="form-control" min="2" max="20">
+                                </div>
+                                <div class="form-group">
+                                    <label for="id_options">Options</label>
+                                    <select id="id_options" name="options" class="form-control">
+                                        {% for value, label in options_choices %}
+                                        <option value="{{ value }}">{{ label }}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="id_wishes">Wishes</label>
+                                    <textarea id="id_wishes" name="wishes" class="form-control"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="id_date">Date & Time</label>
+                                    <input type="datetime-local" id="id_date" name="date" class="form-control" value="{{ booking.date|date:'Y-m-d\TH:i' }}">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
