@@ -199,7 +199,7 @@ This took some time and a lot of try and error, trying to find resources mainly 
 ### Credits 
 
 - Help and support from tutors and my mentor Rory Patrick.
-- Help and guidance from Ioan Zaharia from my team.
+- Help and guidance from Ioan Zaharia from my team, here is his GitHub if you want to know who he is or contact him: https://github.com/zioan.
 - Help and guidance from Tutors, especially John and Sarah.
 
 
