@@ -14,6 +14,10 @@ class BookForm(forms.ModelForm):
         model = Book
         fields = ('date', 'amount', 'session_type', 'options', 'wishes')
 
+        widgets = {
+           'date': forms.DateTimeInput(attrs={'type': 'datetime-local'})
+        }
+
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         
