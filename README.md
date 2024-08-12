@@ -107,6 +107,8 @@ The Business Goals are:
 - The dark colours shows excitement and does fit with a dark cinema room, also fit with castle theme.
 - The theme and pictures are very castle related, I did choose the name because it is fancy and what is more fancy than a castle?
 - I had to cut down on some ideas even if the project to 90% went my way, I did not want to make it to big because of time limits.
+- I forgot to add staticfiles to .gitignore so I asked Roo at tutor support what I should do and he suggested I keep it outside .gitignore, because that is how he himself does in general, 
+he also told me to delete the 3.12.2 file that got created when I put the file in .gitignore.
 
 
 ### Agile
@@ -126,15 +128,15 @@ The Business Goals are:
 
 ### Features Left to Implement
 
-- in the booking manager it should be possible to choose the numbers of options you want or not at all, you should also have a calendar for date/time.
-- The booking manager should have a different design for choices like calendar I mentioned, but also radio buttons for sessions and checkboxes for options.
+- in the booking manager it should be possible to choose the numbers of options you want or not at all.
+- The booking manager should have a different design, like radio buttons for sessions and checkboxes for options.
 - Should in the future be possible with only 3 time frames per auditorium and day, you should get an error if it is already booked.
 - Will be possible with editing your profile and add extra information.
 
 
 ### Testing 
 
-- See separate file for testing information here: <a href="testings/">
+- See separate file for testing information here: <a href="/TESTING.md">
 
 
 ### Validator Testing 
@@ -153,11 +155,11 @@ The Business Goals are:
 
 ### Unfixed and fixed Bugs
 
-- There is a bug that you don't get information about booking not possible when you for example don't have a correct date or amount of people, but the form works in a correct way so the auditorium won't get booked,
-you can also see that it isn't booked because the booking message isn't shown.
+- All known bugs solved.
 - I had a hard time making the forms for register, log in and log out show up while at the same time letting the background being placed correctly.
 I solved it by removing some classes and by changing the z-index for the background to be behind content, but it wasn't enough for the forms, so I also had to create a new form class with an absolute position.
 This took some time and a lot of try and error, trying to find resources mainly on the bootstrap website, checking slack and then contacting Sarah on Tutor Support that suggested looking at the position of the specific forms and to create a class related to it.
+- Had a hard time getting the edit button to work as planned, but made it with a great result with the aid from Ioan Zaharia that pointed at the correct direction while guiding me.
 
 
 ### Quality Score through Google Devtools Lighthouse
@@ -197,6 +199,8 @@ This took some time and a lot of try and error, trying to find resources mainly 
 ### Credits 
 
 - Help and support from tutors and my mentor Rory Patrick.
+- Help and guidance from Ioan Zaharia from my team.
+- Help and guidance from Tutors, especially John and Sarah.
 
 
 ### Content 
