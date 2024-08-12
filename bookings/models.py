@@ -24,8 +24,3 @@ class Book(models.Model):
 
     def __str__(self):
         return f'{self.booker}, {self.date}'
-
-
-#class Options(models.Model):
- #   name = models.CharField(max_length=50)
-  #  booking = models.ManyToManyField(Book)
