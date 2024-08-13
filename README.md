@@ -109,6 +109,7 @@ The Business Goals are:
 - I had to cut down on some ideas even if the project to 90% went my way, I did not want to make it to big because of time limits.
 - I forgot to add staticfiles to .gitignore so I asked Roo at tutor support what I should do and he suggested I keep it outside .gitignore, because that is how he himself does in general, 
 he also told me to delete the 3.12.2 file that got created when I put the file in .gitignore.
+- Only two bookings allowed because I do believe a real The Fancy Cinema Castle establishment wouldn't want anyone to book up all the slots.
 
 
 ### Agile
@@ -136,21 +137,7 @@ he also told me to delete the 3.12.2 file that got created when I put the file i
 
 ### Testing 
 
-- See separate file for testing information here: <a href="/TESTING.md">
-
-
-### Validator Testing 
-
-- HTML
-  -  [W3C validator](https://validator.w3.org/nu/?).
-- CSS
-  -  2 issues and 1 warning [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?) 
-- JS
-  - No errors was returned for JS, but 41 warnings, in the same style about ES6 [(Jigsaw) validator](https://jshint.com/).
-
-<img src="assets/images/validator-html.png" alt='Validator html'>
-<img src="assets/images/validator-css.png" alt='Validator css'>
-<img src="assets/images/validator-js.png" alt='Validator js'>
+- See separate file for testing information here: [/TESTING.md](TESTING.md)
 
 
 ### Unfixed and fixed Bugs
@@ -161,19 +148,6 @@ I solved it by removing some classes and by changing the z-index for the backgro
 This took some time and a lot of try and error, trying to find resources mainly on the bootstrap website, checking slack and then contacting Sarah on Tutor Support that suggested looking at the position of the specific forms and to create a class related to it.
 - Had a hard time getting the edit button to work as planned, but made it with a great result with the aid from Ioan Zaharia that pointed at the correct direction while guiding me.
 
-
-### Quality Score through Google Devtools Lighthouse
-
-- Lighthouse testing on Chrome Incognito to prevent cookies and background cache to slow down.
-
-<img src="assets/images/lighthouse-home-phone.png" alt="Lighthouse Home Phone">
-<img src="assets/images/lighthouse-home-desktop.png" alt="Lighthouse Home Desktop">
-<img src="assets/images/lighthouse-std-phone.png" alt="Lighthouse STD Phone">
-<img src="assets/images/lighthouse-std-desktop.png" alt="Lighthouse STD Desktop">
-<img src="assets/images/lighthouse-questionnaire-phone.png" alt="Lighthouse Questionnaire Phone">
-<img src="assets/images/lighthouse-questionnaire-desktop.png" alt="Lighthouse Questionnaire Desktop">
-<img src="assets/images/lighthouse-team-phone.png" alt="Lighthouse Team Phone">
-<img src="assets/images/lighthouse-team-desktop.png" alt="Lighthouse Team Desktop">
 
 ### Deployment
 
@@ -201,6 +175,9 @@ This took some time and a lot of try and error, trying to find resources mainly 
 - Help and support from tutors and my mentor Rory Patrick.
 - Help and guidance from Ioan Zaharia from my team, here is his GitHub if you want to know who he is or contact him: https://github.com/zioan.
 - Help and guidance from Tutors, especially John and Sarah.
+- I have used Code Institutes LMS related to the project.
+- I have used official documentation from Django, Bootstrap, but also W3 Schools, GeeksforGeeks and Stack Overflow to find answers related to questions regarding Django and Bootstrap.
+- I git inspiration on the testing structure in TESTING.md from Jaqi: https://github.com/JaqiKal/ScrollStack/blob/main/TESTING.md 
 
 
 ### Content 
