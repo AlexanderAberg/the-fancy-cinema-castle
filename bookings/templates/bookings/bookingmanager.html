@@ -7,25 +7,9 @@
 <!-- bookingmanager.html content starts here -->
 <div class="container-fluid">
     <div class="row">
-
-
         <div class="col-12 mt-3 left">
             <div class="row">
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <div class="image-container">
-                                <div class="image-flash">
-                                    <p class="author"></p>
-                                </div>
-                            </div>
-                            <a href="#" class="post-link">
-                                <h2 class="card-title"></h2>
-                            </a>
-                            {{ bookings.content | safe }}
-                        </div>
-                    </div>
-                </div>
+                {{ bookings.content | safe }}
                 <div class="row">
                     <div class="col-md-8 card mb-4 mt-3 ">
                         <h3>Booking Manager:</h3>
@@ -45,7 +29,6 @@
                                     <div> Auditorium: {{ booking.get_session_type_display | linebreaks }}</div>
                                     <div> Options: {{ booking.get_options_display | linebreaks }} </div>
                                     <div> Wishes: {{ booking.wishes | linebreaks }} </div>
-                                
                                     {% if user.is_authenticated and booking.booker == user %}
                                     <h4>Book id : {{ booking.id }}</h4>
                                     <button class="btn btn-delete" data-book_id="{{ booking.id }}">Delete</button>
@@ -87,6 +70,7 @@
                     {% endif %}
                 </div>
             </div>
+
             <!-- Delete confirmation modal -->
             <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel"
                 aria-hidden="true">
@@ -157,16 +141,14 @@
                     </div>
                 </div>
             </div>
-
-            <nav aria-label="Page navigation">
-
-            </nav>
             <div class="spacer"></div>
         </div>
+    </div>
+</div>
 
-        <!-- bookingmanager.html content ends here -->
-        {% endblock %}
+<!-- bookingmanager.html content ends here -->
+{% endblock %}
 
-        {% block extras %}
-        <script src="{% static 'js/bookings.js' %}"></script>
-        {% endblock %}
+{% block extras %}
+<script src="{% static 'js/bookings.js' %}"></script>
+{% endblock %}
