@@ -37,10 +37,11 @@
 
 - Python
  - Official Python Validator [PEP8 Python Validator](https://pep8ci.herokuapp.com/#)
+ - Only checked Python code from files I have worked in, not counted if one link or couple of words has been added.
 
 - fancy_cinema_castle app
-  - No errors were returned, but 5 lines being too long, which you will clearly see in the image why.
-<img src="assets/images/testing/validator-python-settings.png" alt='Validator Settings Python'>
+  - No errors were returned, but 5 lines being too long, which you will clearly see in the image why, was bad result with trying to break lines.
+<img src="assets/images/testing/validator-python-fancy-settings.png" alt='Validator Fancy-Settings Python'>
  - No errors were returned..
 <img src="assets/images/testing/validator-python-fancy-urls.png" alt='Validator Fancy-URLS Python'>
 
@@ -55,6 +56,18 @@
 <img src="assets/images/testing/validator-python-about-urls.png" alt='Validator About-URLS Python'>
  - No errors were returned.
 <img src="assets/images/testing/validator-python-about-views.png" alt='Validator About-Views Python'>
+
+- bookings app
+  - No errors were returned.
+<img src="assets/images/testing/validator-python-bookings-admin.png" alt='Validator Bookings-Admin Python'>
+ - No errors were returned.
+<img src="assets/images/testing/validator-python-bookings-forms.png" alt='Validator Bookings-Forms Python'>
+  - No errors were returned.
+<img src="assets/images/testing/validator-python-bookings-models.png" alt='Validator Bookings-Models Python'>
+ - No errors were returned.
+<img src="assets/images/testing/validator-python-bookings-urls.png" alt='Validator Bookings-URLS Python'>
+ - No errors were returned.
+<img src="assets/images/testing/validator-python-bookings-views.png" alt='Validator Bookings-Views Python'>
 
 
 ### Quality Score through Google Devtools Lighthouse

@@ -5,12 +5,14 @@ from django.http import HttpResponseRedirect, JsonResponse
 from .models import Book
 from .forms import BookForm
 
+
 # Create your views here.
 class Bookings(generic.ListView):
     queryset = Book.objects.all()
     template_name = 'bookings/bookingmanager.html'
 
-#The Booking view
+
+# The Booking view
 def bookings(request):
     """
     Renders the form in the Booking Manager.
@@ -25,7 +27,9 @@ def bookings(request):
             book = book_form.save(commit=False)
             book.booker = request.user
             book.save()
-            messages.add_message(request, messages.SUCCESS, "Thank you for booking an auditorium, we will see you soon.")
+            messages.add_message
+            (request, messages.SUCCESS,
+             "Thank you for booking an auditorium, we will see you soon.")
             return HttpResponseRedirect(reverse('bookings'))
     else:
         book_form = BookForm()
@@ -37,11 +41,12 @@ def bookings(request):
             'bookings': bookings,
             'session_type_choices': session_type_choices,
             'options_choices': options_choices,
-            'book_form': book_form, 
+            'book_form': book_form,
         }
     )
 
-#The Edit Booking view
+
+# The Edit Booking view
 def book_edit(request, book_id):
     book = get_object_or_404(Book, pk=book_id)
     if request.method == "POST":
@@ -52,7 +57,8 @@ def book_edit(request, book_id):
             return JsonResponse({'status': 'success'}, status=200)
         else:
             messages.error(request, 'There was an error updating the booking.')
-            return JsonResponse({'status': 'error', 'errors': book_form.errors}, status=400)
+            return JsonResponse({'status': 'error', 'errors':
+                                 book_form.errors}, status=400)
     if request.method == "GET":
         data = {
             'session_type': book.session_type,
@@ -65,8 +71,7 @@ def book_edit(request, book_id):
     return JsonResponse({'status': 'error'}, status=400)
 
 
-
-#The Delete Booking view
+# The Delete Booking view
 def book_delete(request, book_id):
 
     book = get_object_or_404(Book, pk=book_id)
