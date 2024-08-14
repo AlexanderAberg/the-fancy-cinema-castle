@@ -50,6 +50,12 @@
  - No errors were returned.
 <img src="assets/images/testing/validator-python-home-views.png" alt='Validator HOME-Views Python'>
 
+- about app
+  - No errors were returned.
+<img src="assets/images/testing/validator-python-about-urls.png" alt='Validator About-URLS Python'>
+ - No errors were returned.
+<img src="assets/images/testing/validator-python-about-views.png" alt='Validator About-Views Python'>
+
 
 ### Quality Score through Google Devtools Lighthouse
 
