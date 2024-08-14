@@ -3,15 +3,26 @@
 ### Validator Testing 
 
 - HTML
-  -  [W3C validator](https://validator.w3.org/nu/?).
-- CSS
-  -  2 issues and 1 warning [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?) 
-- JS
-  - No errors was returned for JS, but 41 warnings, in the same style about ES6 [(Jigsaw) validator](https://jshint.com/).
+  -  No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Falexanderaberg.github.io%2FDifferent-Coloured-Tea%2Findex.html)
+<img src="assets/images//testingvalidator-html.png" alt='Validator html'>
 
-<img src="assets/images/validator-html.png" alt='Validator html'>
-<img src="assets/images/validator-css.png" alt='Validator css'>
-<img src="assets/images/validator-js.png" alt='Validator js'>
+  
+- CSS
+  -  No problems, 3 warnings related to fonts and browsers [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/
+<img src="assets/images/testing/validator-css.png" alt='Validator css'>
+
+
+- JS
+  - No errors was returned for JS, but 41 warnings, in the same style about ES6, also warning for undefined variable bootstrap and three unused variables on first 3 rows, 
+  but if I try change or remove and of the mentioned variables my bookings page stops working as it is supposed to, either by not remembering information on edit or by copying bookings during edit,
+   even if there is already 2 bookings [(Jigsaw) validator](https://jshint.com/).
+<img src="assets/images/testing/validator-js.png" alt='Validator js'>
+
+
+- Python
+  - No errors were returned when passing through the official [PEP8 Python Validator](https://pep8ci.herokuapp.com/#).
+
+<img src="assets/images/validator.png" alt='Validator Python'>
 
 
 ### Quality Score through Google Devtools Lighthouse
