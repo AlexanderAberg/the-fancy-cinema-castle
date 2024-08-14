@@ -3,8 +3,20 @@
 ### Validator Testing 
 
 - HTML
-  -  No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Falexanderaberg.github.io%2FDifferent-Coloured-Tea%2Findex.html)
-<img src="assets/images//testingvalidator-html.png" alt='Validator html'>
+ - Official validator [W3C validator](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Falexanderaberg.github.io%2FDifferent-Coloured-Tea%2Findex.html) was used for all HTML validation.
+  -  No errors were returned when passing through the official.
+<img src="assets/images/testing/validator-html-home.png" alt='Validator Home html'>
+
+  -  Two errors were returned related to illegal characters that was needed for Signup and Login.
+<img src="assets/images/testing/validator-html-signup.png" alt='Validator Signup html'>
+
+-  Two errors were returned related to illegal characters that was needed for Login and Signup.
+<img src="assets/images/testing/validator-html-login.png" alt='Validator Login html'>
+
+-  Two errors were returned related to illegal characters that was needed for Logout.
+<img src="assets/images/testing/validator-html-logout.png" alt='Validator Logout html'>
+
+
 
   
 - CSS
