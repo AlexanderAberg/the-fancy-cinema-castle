@@ -38,11 +38,17 @@
 - Python
  - Official Python Validator [PEP8 Python Validator](https://pep8ci.herokuapp.com/#)
 
-- fancy_cinema_castle directory
+- fancy_cinema_castle app
   - No errors were returned, but 5 lines being too long, which you will clearly see in the image why.
-<img src="assets/images/testing/validator-js-settings.png" alt='Validator Settings Python'>
- - No errors were returned, but 5 lines being too long, which you will clearly see in the image why.
-<img src="assets/images/testing/validator-js-fancy-urls.png" alt='Validator Fancy-URLS Python'>
+<img src="assets/images/testing/validator-python-settings.png" alt='Validator Settings Python'>
+ - No errors were returned..
+<img src="assets/images/testing/validator-python-fancy-urls.png" alt='Validator Fancy-URLS Python'>
+
+- home app
+  - No errors were returned.
+<img src="assets/images/testing/validator-python-home-urls.png" alt='Validator Home-URLS Python'>
+ - No errors were returned.
+<img src="assets/images/testing/validator-python-home-views.png" alt='Validator HOME-Views Python'>
 
 
 ### Quality Score through Google Devtools Lighthouse
