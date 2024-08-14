@@ -16,17 +16,15 @@
   -  4 errors were returned related to Django code, so it's not related to my code.
 <img src="assets/images/testing/validator-html-signup.png" alt='Validator Signup html'>
 
--  No errors were returned when passing through the official.
+-  No errors were returned.
 <img src="assets/images/testing/validator-html-login.png" alt='Validator Login html'>
 
--  No errors were returned when passing through the official.
+-  No errors were returned.
 <img src="assets/images/testing/validator-html-logout.png" alt='Validator Logout html'>
-
-
 
   
 - CSS
-  -  No problems, 3 warnings related to fonts and browsers [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/
+  -  No problems, 3 warnings related to fonts and browsers [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
 <img src="assets/images/testing/validator-css.png" alt='Validator css'>
 
 
@@ -38,9 +36,13 @@
 
 
 - Python
-  - No errors were returned when passing through the official [PEP8 Python Validator](https://pep8ci.herokuapp.com/#).
+ - Official Python Validator [PEP8 Python Validator](https://pep8ci.herokuapp.com/#)
 
-<img src="assets/images/validator.png" alt='Validator Python'>
+- fancy_cinema_castle directory
+  - No errors were returned, but 5 lines being too long, which you will clearly see in the image why.
+<img src="assets/images/testing/validator-js-settings.png" alt='Validator Settings Python'>
+ - No errors were returned, but 5 lines being too long, which you will clearly see in the image why.
+<img src="assets/images/testing/validator-js-fancy-urls.png" alt='Validator Fancy-URLS Python'>
 
 
 ### Quality Score through Google Devtools Lighthouse

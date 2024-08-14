@@ -1,4 +1,4 @@
-#URL for The Fancy Cinema Castle
+# URL for The Fancy Cinema Castle
 from django.contrib import admin
 from django.urls import path, include
 
