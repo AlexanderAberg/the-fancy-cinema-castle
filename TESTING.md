@@ -4,16 +4,22 @@
 
 - HTML
  - Official validator [W3C validator](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Falexanderaberg.github.io%2FDifferent-Coloured-Tea%2Findex.html) was used for all HTML validation.
-  -  No errors were returned when passing through the official.
+  -  No errors were returned.
 <img src="assets/images/testing/validator-html-home.png" alt='Validator Home html'>
 
-  -  Two errors were returned related to illegal characters that was needed for Signup and Login.
+ -  No errors were returned.
+<img src="assets/images/testing/validator-html-about.png" alt='Validator About html'>
+
+ -  No errors were returned.
+<img src="assets/images/testing/validator-html-bookings.png" alt='Validator Bookings html'>
+
+  -  4 errors were returned related to Django code, so it's not related to my code.
 <img src="assets/images/testing/validator-html-signup.png" alt='Validator Signup html'>
 
--  Two errors were returned related to illegal characters that was needed for Login and Signup.
+-  No errors were returned when passing through the official.
 <img src="assets/images/testing/validator-html-login.png" alt='Validator Login html'>
 
--  Two errors were returned related to illegal characters that was needed for Logout.
+-  No errors were returned when passing through the official.
 <img src="assets/images/testing/validator-html-logout.png" alt='Validator Logout html'>
 
 
