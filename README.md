@@ -239,8 +239,9 @@ This took some time and a lot of try and error, trying to find resources mainly 
 
 
 
-### Colours
+### Fonts & Colours
 
+- Font style is Instrument Serif from Google Fonts, which I think fit the theme very well.
 - Colours that would be smooth while standing out from the images and bootstrap.
 - The image doesn't include bootstrap colours, the most used bootstrap colour is dark with light buttons and lines.
 
