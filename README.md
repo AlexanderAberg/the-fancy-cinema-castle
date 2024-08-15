@@ -32,6 +32,7 @@ The Business Goals are:
 - To also offer you to play video games on a cutting edge cinema auditorium.
 - To give you a great time.
 
+
 ### User Stories
 1. As a Site Creator I can deploy the project so that I can make it accessible for the user.
 2. As a Site User I can register an account so that I can book an auditorium.
@@ -48,6 +49,7 @@ The Business Goals are:
 13. As a Site User I can edit and cancel my booking so that I can adjust to my wants and needs.
 14. As a Site Admin I can see other peoples bookings so that I can prepare the staff.
 15. As a Site User I can edit my profile so that I can have my info up to date.
+
 
 ### Existing Features
 
@@ -133,11 +135,7 @@ he also told me to delete the 3.12.2 file that got created when I put the file i
 - The booking manager should have a different design, like radio buttons for sessions and checkboxes for options.
 - Should in the future be possible with only 3 time frames per auditorium and day, you should get an error if it is already booked.
 - Will be possible with editing your profile and add extra information.
-
-
-### Testing 
-
-- See separate file for testing information here: [/TESTING.md](TESTING.md)
+- Undecided if Footer will have more contact information like address according to User Story
 
 
 ### Unfixed and fixed Bugs
@@ -147,6 +145,14 @@ he also told me to delete the 3.12.2 file that got created when I put the file i
 I solved it by removing some classes and by changing the z-index for the background to be behind content, but it wasn't enough for the forms, so I also had to create a new form class with an absolute position.
 This took some time and a lot of try and error, trying to find resources mainly on the bootstrap website, checking slack and then contacting Sarah on Tutor Support that suggested looking at the position of the specific forms and to create a class related to it.
 - Had a hard time getting the edit button to work as planned, but made it with a great result with the aid from Ioan Zaharia that pointed at the correct direction while guiding me.
+
+### Fonts & Colours
+
+- Font style is Instrument Serif from Google Fonts, which I think fit the theme very well.
+- Colours that would be smooth while standing out from the images and bootstrap.
+- The image doesn't include bootstrap colours, the most used bootstrap colour is dark with light buttons and lines.
+
+<img src="assets/images/colours.png" alt="Colours">
 
 
 ### Deployment
@@ -170,27 +176,9 @@ This took some time and a lot of try and error, trying to find resources mainly 
   - Link to the live version of the project can be found here: - https://the-fancy-cinema-castle-7eb7ea1dedc6.herokuapp.com and to the GitHub page here: https://github.com/AlexanderAberg/the-fancy-cinema-castle
 
 
-### Credits 
-
-- Help and support from tutors and my mentor Rory Patrick.
-- Help and guidance from Ioan Zaharia from my team, here is his GitHub if you want to know who he is or contact him: https://github.com/zioan.
-- Help and guidance from Tutors, especially John and Sarah.
-- I have used Code Institutes LMS related to the project.
-- I have used official documentation from Django, Bootstrap, but also W3 Schools, GeeksforGeeks and Stack Overflow to find answers related to questions regarding Django and Bootstrap.
-- I git inspiration on the testing structure in TESTING.md from Jaqi: https://github.com/JaqiKal/ScrollStack/blob/main/TESTING.md 
-
-
 ### Content 
 
 - I made up the content and my inspiration is just normal life.
-
-
-### Media
-
-- Used Freepik AI to create the cinema castle image and the images in the carousel, here is link to the tool: https://www.freepik.com/pikaso/ai-image-generator.
-- Icon and Favicon from https://www.freepik.com/icon/haunted-house_950727 
-- Responsive image from https://ui.dev/amiresponsive
-- Colour generator from https://coolors.co/ 
 
 
 
@@ -215,6 +203,7 @@ This took some time and a lot of try and error, trying to find resources mainly 
 
 <img src="assets/images/flowchart.png" alt="Lucid Charts Flowchart">
 
+
 ### Technologies Used
 
 - HTML - For how the website with the pages is built and planned 
@@ -224,6 +213,7 @@ This took some time and a lot of try and error, trying to find resources mainly 
 - Django - As Python framework
 - Bootstrap - For styling
 - Images  - Freepik including their AI
+- File Storage - Cloudinary to store images
 - Fonts - From Google Fonts
 - Icons - From Fontawesome 
 - Wireframe - From Balsamiq
@@ -238,11 +228,24 @@ This took some time and a lot of try and error, trying to find resources mainly 
 - Markup - For this README and User Stories
 
 
+### Media
 
-### Fonts & Colours
+- Used Freepik AI to create the cinema castle image and the images in the carousel, here is link to the tool: https://www.freepik.com/pikaso/ai-image-generator.
+- Icon and Favicon from https://www.freepik.com/icon/haunted-house_950727 
+- Responsive image from https://ui.dev/amiresponsive
+- Colour generator from https://coolors.co/ 
 
-- Font style is Instrument Serif from Google Fonts, which I think fit the theme very well.
-- Colours that would be smooth while standing out from the images and bootstrap.
-- The image doesn't include bootstrap colours, the most used bootstrap colour is dark with light buttons and lines.
 
-<img src="assets/images/colours.png" alt="Colours">
+### Testing 
+
+- See separate file for testing information here: [/TESTING.md](TESTING.md)
+
+
+### Credits 
+
+- Help and support from tutors and my mentor Rory Patrick.
+- Help and guidance from Ioan Zaharia from my team, here is his GitHub if you want to know who he is or contact him: https://github.com/zioan.
+- Help and guidance from Tutors, especially John and Sarah.
+- I have used Code Institutes LMS related to the project.
+- I have used official documentation from Django, Bootstrap, but also W3 Schools, GeeksforGeeks and Stack Overflow to find answers related to questions regarding Django and Bootstrap.
+- I got inspiration on the testing structure in TESTING.md from Jaqi: https://github.com/JaqiKal/ScrollStack/blob/main/TESTING.md 
