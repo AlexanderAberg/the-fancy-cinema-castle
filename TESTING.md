@@ -130,4 +130,4 @@ Return back to the [README.md](README.md) file.
 
 ### Credits 
 
-- I got inspiration on the testing structure in from Jaqi: https://github.com/JaqiKal/ScrollStack/blob/main/TESTING.md 
+- I got inspiration on the testing structure from Jaqi: https://github.com/JaqiKal/ScrollStack/blob/main/TESTING.md 
