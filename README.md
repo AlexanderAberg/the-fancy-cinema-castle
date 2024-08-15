@@ -140,7 +140,7 @@ he also told me to delete the 3.12.2 file that got created when I put the file i
 
 ### Unfixed and fixed Bugs
 
-- All known bugs solved.
+- Seems to be problem with registration for Xiaomi Redmi Note, which I don't know how to solve and can't find anything on Google, Tutors also don't want to help me with it, other than that is all known bugs solved.
 - I had a hard time making the forms for register, log in and log out show up while at the same time letting the background being placed correctly.
 I solved it by removing some classes and by changing the z-index for the background to be behind content, but it wasn't enough for the forms, so I also had to create a new form class with an absolute position.
 This took some time and a lot of try and error, trying to find resources mainly on the bootstrap website, checking slack and then contacting Sarah on Tutor Support that suggested looking at the position of the specific forms and to create a class related to it.
